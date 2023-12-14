@@ -26,7 +26,7 @@
     <x-guest-layout>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6 bg-cover" style="background-image: url('vendor/adminlte/dist/img/conductores.jpg');">
+                <div class="col-md-6 bg-cover" style="background-image: url('vendor/adminlte/dist/img/consductores.jpg');">
                     <!-- Puedes agregar contenido adicional para el lado izquierdo si lo necesitas -->
                 </div>
 

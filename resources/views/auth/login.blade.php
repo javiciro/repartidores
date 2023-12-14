@@ -79,6 +79,13 @@
                 <div class="col-md-8">
                     <div class="login-form">
 
+                        <!-- Mensaje de error general -->
+                        @if(session('error'))
+                            <div class="tealwin-error">
+                                {{ session('error') }}
+                            </div>
+                        @endif
+
                         <div class="text-center mb-4">
                             <h2 class="text-3xl font-extrabold text-dark">
                                 Iniciar sesión
@@ -87,6 +94,15 @@
                         
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
+
+                            <!-- Mensajes de error específicos para campos -->
+                            @error('email')
+                                <div class="tealwin-error">Correo electrónico  o contraseña incorrecta </div>
+                            @enderror
+
+                            @error('password')
+                                <div class="tealwin-error">Contraseña incorrecta</div>
+                            @enderror
 
                             <div class="mb-3">
                                 <label for="email" class="form-label">Correo Electrónico</label>

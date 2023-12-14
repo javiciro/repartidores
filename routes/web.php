@@ -27,7 +27,7 @@ use App\Http\Controllers\TesoreriaController;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('welcome');
 });
 
 Route::middleware([
